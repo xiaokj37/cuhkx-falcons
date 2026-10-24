@@ -1,0 +1,7 @@
+{
+  "name": "fixed_dual_view",
+  "checkpoint": "models/model.pt",
+  "views": ["odd", "even"],
+  "batch_size": 8,
+  "virtual_reference_ranks": 4
+}

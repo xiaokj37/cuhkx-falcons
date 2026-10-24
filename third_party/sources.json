@@ -1,0 +1,30 @@
+{
+  "source": "https://zenodo.org/records/19144427",
+  "archive_sha256": "cf6486a519a9b32f7e49c425873301b024e43218a8e9c342967294710faf42dc",
+  "files": [
+    {
+      "upstream": "SM/Code/skeleton/model/DSTformer.py",
+      "local": "cuhkx/vendor/dstformer.py",
+      "upstream_sha256": "ecca79fe57de62e31aa25a164e4420768976c4a0641f028b3ed2ef1780f28c81"
+    },
+    {
+      "upstream": "SM/Code/skeleton/model/drop.py",
+      "local": "cuhkx/vendor/drop.py",
+      "upstream_sha256": "03f640fce5b6675b2cb6fd766b4f2fd723445bb2d545c2890c2cbbfae596e9dd"
+    },
+    {
+      "upstream": "SM/Code/imu/models/cnn_transformer.py",
+      "local": "cuhkx/vendor/cnn_transformer.py",
+      "upstream_sha256": "5da4181c341ed6621e584523984dbcd2dc5988077d5f25462bb20ed245b09029"
+    },
+    {
+      "upstream": "SM/Code/radar/train_models_radar_mix.py",
+      "local": "cuhkx/vendor/radar_pointnet.py",
+      "upstream_sha256": "7212df5cf55ba75b3ee33f1c75bb260394e22526f8112102287f917599cae00e",
+      "extracted_classes": [
+        "TNet",
+        "RadarPointNet"
+      ]
+    }
+  ]
+}

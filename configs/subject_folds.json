@@ -1,0 +1,45 @@
+{
+  "selection_seed": 20260906,
+  "selection_uses": "training subjects, labels and sample counts only; no model scores or test labels",
+  "folds": {
+    "1": {
+      "subjects": [
+        2,
+        3,
+        7,
+        17,
+        19,
+        23
+      ],
+      "clips": 1011,
+      "missing_validation_classes": [],
+      "missing_training_classes": []
+    },
+    "2": {
+      "subjects": [
+        1,
+        4,
+        6,
+        16,
+        21,
+        22
+      ],
+      "clips": 1012,
+      "missing_validation_classes": [],
+      "missing_training_classes": []
+    },
+    "3": {
+      "subjects": [
+        5,
+        8,
+        9,
+        18,
+        20,
+        24
+      ],
+      "clips": 1013,
+      "missing_validation_classes": [],
+      "missing_training_classes": []
+    }
+  }
+}

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software and the applicable upstream projects."
+type: software
+title: "Efficient Multimodal Human Action Recognition: Team Falcons CUHK-X Solution"
+version: 1.1.0
+date-released: 2026-10-24
+authors:
+  - family-names: Xiao
+    given-names: Kaijie
+    affiliation: Zhejiang University
+abstract: >-
+  Six-modality human activity recognition with a shared distilled video
+  Transformer, LIMU-BERT-X, small sensor branches, residual cross-modal
+  attention, masked feature prediction and fixed temporal-view inference.
+license: Apache-2.0
+repository-code: "https://github.com/xiaokj37/cuhkx-falcons"
+url: "https://github.com/xiaokj37/cuhkx-falcons"

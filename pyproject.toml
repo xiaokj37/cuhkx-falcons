@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==79.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuhkx-falcons"
+version = "1.1.0"
+description = "Efficient multimodal human action recognition with shared video encoders and fixed temporal views"
+requires-python = ">=3.10,<3.11"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Team Falcons"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cuhkx*"]

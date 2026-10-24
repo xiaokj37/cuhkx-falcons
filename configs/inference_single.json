@@ -1,0 +1,7 @@
+{
+  "name": "fixed_single_view",
+  "checkpoint": "models/model.pt",
+  "views": ["odd"],
+  "batch_size": 8,
+  "virtual_reference_ranks": 4
+}

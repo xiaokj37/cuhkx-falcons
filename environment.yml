@@ -1,0 +1,7 @@
+name: cuhkx-falcons
+channels: [conda-forge]
+dependencies:
+  - python=3.10.20
+  - pip=25.2
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,218 @@
+{
+  "frozen_inference_commit": "9706a96b3ba07c49603d8ccd6aca9c0f8cdfe2a8",
+  "original_joint_training_commit": "740c2e1a94cfb0c777e5cbac60f5ba8c0de66e33",
+  "public_changes": [
+    "Portable single/dual mode selection without personal submission metadata",
+    "Optional explicit exported research checkpoint with integrity checks",
+    "Temporal helper extraction; historical experiment controllers excluded",
+    "New path-portable data/config preparation and CPU release tests",
+    "Lazy ML imports, JSON inference mode presets, and standalone checkpoint-integrity validation; same inference_mode context around unchanged model computation",
+    "Apache-2.0 for original contributions; upstream notices retained",
+    "Video adapter rebuilt from the official MIT VideoMAEv2 implementation with the competition API, initialization sequence and SDPA operations preserved",
+    "Unused historical ImageBind source excluded; selected LIMU-BERT-X encoder unchanged"
+  ],
+  "files": {
+    "src/cuhkx/__init__.py": {
+      "frozen_sha256": "824272d5ec33f391d62b73bfbed7551dd4e4c865be1c1f3ef566f7532200f795",
+      "release_sha256": "824272d5ec33f391d62b73bfbed7551dd4e4c865be1c1f3ef566f7532200f795",
+      "unchanged": true
+    },
+    "src/cuhkx/cache.py": {
+      "frozen_sha256": "ccff4f479eb649a0b54f078ecfbc37879f947706ba2909b5fdff0525d0b13cc4",
+      "release_sha256": "ccff4f479eb649a0b54f078ecfbc37879f947706ba2909b5fdff0525d0b13cc4",
+      "unchanged": true
+    },
+    "src/cuhkx/data.py": {
+      "frozen_sha256": "9dbf4ca5296894dc419e07da6a0c1435d3df301503ec3889310eb7deea6f52e9",
+      "release_sha256": "9dbf4ca5296894dc419e07da6a0c1435d3df301503ec3889310eb7deea6f52e9",
+      "unchanged": true
+    },
+    "src/cuhkx/domain_generalization.py": {
+      "frozen_sha256": "31fcd0ccb38d750e6e9abe450a1b198941a287fb89a1199382336d5b146f3e0b",
+      "release_sha256": "31fcd0ccb38d750e6e9abe450a1b198941a287fb89a1199382336d5b146f3e0b",
+      "unchanged": true
+    },
+    "src/cuhkx/imu_models.py": {
+      "frozen_sha256": "fca7a19fb2f91bd29231ca114f95a82cdb9f304d0bf786d5a84349954e0c6853",
+      "release_sha256": "fca7a19fb2f91bd29231ca114f95a82cdb9f304d0bf786d5a84349954e0c6853",
+      "unchanged": true
+    },
+    "src/cuhkx/intensity.py": {
+      "frozen_sha256": "739534e6dc12f734725528387652ff85eadfa7be8b60fd540176ea3e0838bff3",
+      "release_sha256": "739534e6dc12f734725528387652ff85eadfa7be8b60fd540176ea3e0838bff3",
+      "unchanged": true
+    },
+    "src/cuhkx/mae_models.py": {
+      "frozen_sha256": "c93c6379fe1d1b3b0b997fcce0224183741e71bee5b87ac88c3e87af0ed0aafe",
+      "release_sha256": "c93c6379fe1d1b3b0b997fcce0224183741e71bee5b87ac88c3e87af0ed0aafe",
+      "unchanged": true
+    },
+    "src/cuhkx/models.py": {
+      "frozen_sha256": "3686ac26a2a248115eb9754365fc5118a36a2ff2eecd9ba242c9b9322011cfb1",
+      "release_sha256": "3686ac26a2a248115eb9754365fc5118a36a2ff2eecd9ba242c9b9322011cfb1",
+      "unchanged": true
+    },
+    "src/cuhkx/official_models.py": {
+      "frozen_sha256": "98ff79d19ccba4dbc66099c9c658ab0020f87e8a358652dad2c47cf4e7a4eb0e",
+      "release_sha256": "98ff79d19ccba4dbc66099c9c658ab0020f87e8a358652dad2c47cf4e7a4eb0e",
+      "unchanged": true
+    },
+    "src/cuhkx/optim.py": {
+      "frozen_sha256": "5cb6d4ae7a86d27f958b33c31d7100e011a5ddd963e022d04d841273f13ebf1f",
+      "release_sha256": "5cb6d4ae7a86d27f958b33c31d7100e011a5ddd963e022d04d841273f13ebf1f",
+      "unchanged": true
+    },
+    "src/cuhkx/orientation_cache.py": {
+      "frozen_sha256": "0af097405e2d35832f5ae527a05ec219fef4af02f76a83edf7f0087fd3e78c7e",
+      "release_sha256": "0af097405e2d35832f5ae527a05ec219fef4af02f76a83edf7f0087fd3e78c7e",
+      "unchanged": true
+    },
+    "src/cuhkx/orientation_models.py": {
+      "frozen_sha256": "7ca4571d9e58b814e98c7c1b3dfaaf8fa420d90d47e8a00041d01d9c1b3f6ce6",
+      "release_sha256": "7ca4571d9e58b814e98c7c1b3dfaaf8fa420d90d47e8a00041d01d9c1b3f6ce6",
+      "unchanged": true
+    },
+    "src/cuhkx/predict.py": {
+      "frozen_sha256": "10972addac20c63237f43e73a479e7b2d243fc381864688f9076d25ea16376a5",
+      "release_sha256": "10972addac20c63237f43e73a479e7b2d243fc381864688f9076d25ea16376a5",
+      "unchanged": true
+    },
+    "src/cuhkx/radar_cache.py": {
+      "frozen_sha256": "41f8a8453faff8b816c4c23f1f2bfcc40b2bc42722a51d4b55e322d9d0172043",
+      "release_sha256": "41f8a8453faff8b816c4c23f1f2bfcc40b2bc42722a51d4b55e322d9d0172043",
+      "unchanged": true
+    },
+    "src/cuhkx/radar_models.py": {
+      "frozen_sha256": "59ac540cf3c0a9a7f934df4a1eece3602e1b52422608b030ae8a23661176a0bf",
+      "release_sha256": "59ac540cf3c0a9a7f934df4a1eece3602e1b52422608b030ae8a23661176a0bf",
+      "unchanged": true
+    },
+    "src/cuhkx/residual_fusion.py": {
+      "frozen_sha256": "2812f4de7c6395fe8630e2bf5169ae856456dab8ec749c35157b044ceb1cd070",
+      "release_sha256": "2812f4de7c6395fe8630e2bf5169ae856456dab8ec749c35157b044ceb1cd070",
+      "unchanged": true
+    },
+    "src/cuhkx/roi.py": {
+      "frozen_sha256": "aa48666d8b784ea75e55aefbd69ca77ea64b843703ed65711d3d99d0c501530c",
+      "release_sha256": "aa48666d8b784ea75e55aefbd69ca77ea64b843703ed65711d3d99d0c501530c",
+      "unchanged": true
+    },
+    "src/cuhkx/sensor_cache.py": {
+      "frozen_sha256": "a94819e740a3b1b39fb6a33226b198313ac169b2f84e9f412e6d7426cf17eb02",
+      "release_sha256": "a94819e740a3b1b39fb6a33226b198313ac169b2f84e9f412e6d7426cf17eb02",
+      "unchanged": true
+    },
+    "src/cuhkx/sensor_initialization.py": {
+      "frozen_sha256": "c3f0fd16a4cf10ca49a73efff1d4df4c50c1590e214218ae5998348d2cbafe40",
+      "release_sha256": "c3f0fd16a4cf10ca49a73efff1d4df4c50c1590e214218ae5998348d2cbafe40",
+      "unchanged": true
+    },
+    "src/cuhkx/sensor_train.py": {
+      "frozen_sha256": "0c91332f9a2729d262216f1f8f1effa48a95d7694286a55c427e83c10de2e6d4",
+      "release_sha256": "0c91332f9a2729d262216f1f8f1effa48a95d7694286a55c427e83c10de2e6d4",
+      "unchanged": true
+    },
+    "src/cuhkx/skeleton_models.py": {
+      "frozen_sha256": "1828fe01a673630dfef4d4a07b2d7ff617b35e74d06be39da9ebdcf2e6f29e38",
+      "release_sha256": "1828fe01a673630dfef4d4a07b2d7ff617b35e74d06be39da9ebdcf2e6f29e38",
+      "unchanged": true
+    },
+    "src/cuhkx/storage_precision.py": {
+      "frozen_sha256": "bbdcdc850c5ae004bf571045671e781e21e60a2fb2a2a474e607255aacde8ce3",
+      "release_sha256": "bbdcdc850c5ae004bf571045671e781e21e60a2fb2a2a474e607255aacde8ce3",
+      "unchanged": true
+    },
+    "src/cuhkx/temporal_views.py": {
+      "frozen_sha256": "9ac8adf1bede920a22c56cfd985357154aa0d140049a4c6dee6ca5635a891061",
+      "release_sha256": "5be0e9c52033acf526c38247b430725b26b7d8f650084eabe3daa90ed8ee11b7",
+      "unchanged": false
+    },
+    "src/cuhkx/tracking.py": {
+      "frozen_sha256": "f48d23ea82161f90938695603d3b6ea0220583223ed60a695780d8161071878c",
+      "release_sha256": "f48d23ea82161f90938695603d3b6ea0220583223ed60a695780d8161071878c",
+      "unchanged": true
+    },
+    "src/cuhkx/train.py": {
+      "frozen_sha256": "cae0fc0d47007e49dbaddd850f2b16664bdb1dc60d760e1153139f77deef14aa",
+      "release_sha256": "cae0fc0d47007e49dbaddd850f2b16664bdb1dc60d760e1153139f77deef14aa",
+      "unchanged": true
+    },
+    "src/cuhkx/trajectory_average.py": {
+      "frozen_sha256": "8e4bbc6774ea6f7f07738c2ee1975d25f687a7b36ff754162c53786b20c101bc",
+      "release_sha256": "8e4bbc6774ea6f7f07738c2ee1975d25f687a7b36ff754162c53786b20c101bc",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/__init__.py": {
+      "frozen_sha256": "71c8162be5119e8a042ee60a207a2573baf8fb0affc829eef0abdd196a680e64",
+      "release_sha256": "71c8162be5119e8a042ee60a207a2573baf8fb0affc829eef0abdd196a680e64",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/cnn_transformer.py": {
+      "frozen_sha256": "cd716180774c059159d6bc0c96c1581175ac2203e6f99cd2a90032b9b5a7659c",
+      "release_sha256": "cd716180774c059159d6bc0c96c1581175ac2203e6f99cd2a90032b9b5a7659c",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/drop.py": {
+      "frozen_sha256": "328abdf77a4b5aa3f953b379bdd07a140857a19245c01bb9c4bb790f65de646b",
+      "release_sha256": "328abdf77a4b5aa3f953b379bdd07a140857a19245c01bb9c4bb790f65de646b",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/dstformer.py": {
+      "frozen_sha256": "cbea930f1f37411f523678fdc0155ec7e43f8feb22c9d0d8b9c1c0e76194cc40",
+      "release_sha256": "cbea930f1f37411f523678fdc0155ec7e43f8feb22c9d0d8b9c1c0e76194cc40",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/limu_bert.py": {
+      "frozen_sha256": "a5d6460c9ec8a8004dac3a608a4045286b06326502155a5c0f7be1d23e873999",
+      "release_sha256": "a5d6460c9ec8a8004dac3a608a4045286b06326502155a5c0f7be1d23e873999",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/radar_pointnet.py": {
+      "frozen_sha256": "09d52aa876179730cc398be8b25d82cfa1d7ec53607cceeaa51f46e4346c2074",
+      "release_sha256": "09d52aa876179730cc398be8b25d82cfa1d7ec53607cceeaa51f46e4346c2074",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/videomae.py": {
+      "frozen_sha256": "14c3d6faaa837288dc7aded1247230581bf55d4212279c25167263d15ab0ca1c",
+      "release_sha256": "21adceae970e8dc1c00fd8fd0d3c26f2424c0b4925c3f9a0ef6e6fce96a827ac",
+      "unchanged": false,
+      "release_upstream": {
+        "url": "https://github.com/OpenGVLab/VideoMAEv2/blob/29eab1e8a588d1b3ec0cdec7b03a86cca491b74b/models/modeling_finetune.py",
+        "source_sha256": "d132c97369f25207e380e78c59294fd00b93d2f6aa0fb5c4ded19eff26a5a3cb",
+        "license": "MIT"
+      }
+    },
+    "src/cuhkx/vendor/xfi_point_transformer.py": {
+      "frozen_sha256": "8b9ca663967c8147cbc4122d5043bac2406d6037e794c82aa1aca8dd86689e12",
+      "release_sha256": "8b9ca663967c8147cbc4122d5043bac2406d6037e794c82aa1aca8dd86689e12",
+      "unchanged": true
+    },
+    "src/cuhkx/video_models.py": {
+      "frozen_sha256": "c0607ba6e692504c102b81b6afab1ebc7398360804c397f996814f29494e5cd8",
+      "release_sha256": "c0607ba6e692504c102b81b6afab1ebc7398360804c397f996814f29494e5cd8",
+      "unchanged": true
+    },
+    "src/cuhkx/weights.py": {
+      "frozen_sha256": "e03eb9028680c40c4e3b302e2b224399130e1caf640acdb277b5cc2cb8b2608c",
+      "release_sha256": "e03eb9028680c40c4e3b302e2b224399130e1caf640acdb277b5cc2cb8b2608c",
+      "unchanged": true
+    },
+    "src/predict.py": {
+      "frozen_sha256": "b8b2cd117b91e6cd9c9de07c417d72620633224444a522dd199897a506ae1750",
+      "release_sha256": "05c5b6b7cda190f98ed2e65e36c1b71507f5ac20ef396536dcb4a5519d585dfb",
+      "unchanged": false
+    }
+  },
+  "removed_optional_files": {
+    "src/cuhkx/imagebind_imu.py": {
+      "frozen_sha256": "249e10c8c043367384c7e353d3654f9d34f067806de8644e679836b49120b74a",
+      "release_sha256": "249e10c8c043367384c7e353d3654f9d34f067806de8644e679836b49120b74a",
+      "unchanged": true
+    },
+    "src/cuhkx/vendor/imagebind_imu.py": {
+      "frozen_sha256": "5aa01941bc081cfeec12fcb002251f580b4f8359232f924ce45635e600bbc576",
+      "release_sha256": "5aa01941bc081cfeec12fcb002251f580b4f8359232f924ce45635e600bbc576",
+      "unchanged": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+Team Falcons CUHK-X Challenge 2026 solution
+Copyright 2026 Team Falcons
+
+Original Team Falcons contributions are licensed under the Apache License,
+Version 2.0. Third-party components retain their own copyrights and licenses;
+see THIRD_PARTY_NOTICES.md and third_party/ for the applicable texts.
+
+This source release contains no CUHK-X dataset, submitted predictions,
+personal declarations, or model binaries. Model weights and the dataset have
+separate terms; the Apache code license does not grant rights to those assets.

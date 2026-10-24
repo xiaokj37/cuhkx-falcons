@@ -1,0 +1,156 @@
+{
+  "backbone": "videomae_base",
+  "pretrained": "pretrained/videomaev2_vitb_k710_distilled_original.pth",
+  "pretrained_sha256": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec",
+  "modalities": [
+    "thermal",
+    "depth",
+    "ir",
+    "skeleton",
+    "imu",
+    "radar"
+  ],
+  "frames": 16,
+  "image_size": 224,
+  "dim": 256,
+  "epochs": 50,
+  "batch_size": 8,
+  "val_batch_size": 8,
+  "accumulation": 2,
+  "lr": 0.0006,
+  "backbone_lr_ratio": 0.2,
+  "weight_decay": 0.05,
+  "warmup_epochs": 5,
+  "label_smoothing": 0.1,
+  "auxiliary_weight": 0.8,
+  "modality_dropout": 0.15,
+  "workers": 2,
+  "cpu_threads": 4,
+  "warm_cache": true,
+  "seed": 20260906,
+  "log_every": 20,
+  "sensor_family": "official",
+  "fusion": "residual_bottleneck",
+  "input_crop": "person_roi",
+  "skeleton_config": {
+    "width": 64,
+    "depth": 1,
+    "heads": 2,
+    "maxlen": 64
+  },
+  "detector": "pretrained/yolo11n.pt",
+  "mixstyle": 0.0,
+  "partial_bn": false,
+  "visual_configs": {
+    "thermal": {
+      "backbone": "videomae_base",
+      "pretrained": "pretrained/videomaev2_vitb_k710_distilled_original.pth",
+      "pretrained_sha256": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec",
+      "image_size": 224,
+      "normalization": "imagenet",
+      "drop_path": 0.15,
+      "activation_checkpointing": false,
+      "augmentation": {
+        "crop_scale": [
+          0.6,
+          1.0
+        ],
+        "gain": [
+          0.75,
+          1.25
+        ],
+        "contrast": [
+          0.75,
+          1.25
+        ],
+        "erase_prob": 0.25
+      },
+      "pretraining_classes": 710
+    },
+    "depth": {
+      "backbone": "videomae_base",
+      "pretrained": "pretrained/videomaev2_vitb_k710_distilled_original.pth",
+      "pretrained_sha256": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec",
+      "image_size": 224,
+      "normalization": "imagenet",
+      "drop_path": 0.15,
+      "activation_checkpointing": false,
+      "augmentation": {
+        "crop_scale": [
+          0.6,
+          1.0
+        ],
+        "gain": [
+          0.75,
+          1.25
+        ],
+        "contrast": [
+          0.75,
+          1.25
+        ],
+        "erase_prob": 0.25
+      },
+      "pretraining_classes": 710
+    },
+    "ir": {
+      "backbone": "videomae_base",
+      "pretrained": "pretrained/videomaev2_vitb_k710_distilled_original.pth",
+      "pretrained_sha256": "8141a6955e0700d11bf15928fe6d61e5cfe482606fed8cfdddb1b922c0fd88ec",
+      "image_size": 224,
+      "normalization": "imagenet",
+      "drop_path": 0.15,
+      "activation_checkpointing": false,
+      "augmentation": {
+        "crop_scale": [
+          0.6,
+          1.0
+        ],
+        "gain": [
+          0.75,
+          1.25
+        ],
+        "contrast": [
+          0.75,
+          1.25
+        ],
+        "erase_prob": 0.25
+      },
+      "intensity": {
+        "mode": "gamma",
+        "gamma": 0.5
+      },
+      "pretraining_classes": 710
+    }
+  },
+  "video_layer_decay": 0.85,
+  "bias_norm_no_decay": true,
+  "shared_video_groups": [
+    [
+      "thermal",
+      "depth",
+      "ir"
+    ]
+  ],
+  "domain_generalization": {
+    "start_epoch": 5,
+    "ramp_epochs": 10,
+    "contrastive_weight": 0.05,
+    "temperature": 0.2
+  },
+  "imu_config": {
+    "backbone": "limu_bert_x",
+    "pretrained": null
+  },
+  "imu_encoder_lr_ratio": 0.1,
+  "fusion_config": {
+    "hidden": 128,
+    "latent_tokens": 4,
+    "heads": 4,
+    "dropout": 0.1
+  },
+  "masked_prediction": {
+    "weight": 0.1,
+    "start_epoch": 5.0,
+    "ramp_epochs": 10.0
+  }
+}

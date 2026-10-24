@@ -1,0 +1,18 @@
+{
+  "epochs": 43,
+  "batch_size": 64,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "warmup_epochs": 5,
+  "label_smoothing": 0.05,
+  "seed": 20260906,
+  "cpu_threads": 2,
+  "encoder": "limu_bert",
+  "modality": "imu",
+  "pretrained": "pretrained/limu_bert_x_original.pt",
+  "pretrained_sha256": "65697e7017020f36429a221382253f1fc370fdfd493cfb71667f95846c18516c",
+  "backbone_lr_ratio": 0.1,
+  "allow_tf32": true,
+  "full_source_fit": true,
+  "schedule_epochs": 50
+}

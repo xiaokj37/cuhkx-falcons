@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "torch": "2.8.0",
+  "synthetic_shape": [
+    2,
+    3,
+    4,
+    32,
+    32
+  ],
+  "state_keys": 32,
+  "initialization_and_strict_state_load": "exact",
+  "checks": [
+    {
+      "training": false,
+      "checkpoint": false,
+      "maximum_output_error": 0.0,
+      "maximum_gradient_error": 0.0
+    },
+    {
+      "training": true,
+      "checkpoint": false,
+      "maximum_output_error": 0.0,
+      "maximum_gradient_error": 0.0
+    },
+    {
+      "training": true,
+      "checkpoint": true,
+      "maximum_output_error": 0.0,
+      "maximum_gradient_error": 0.0
+    }
+  ],
+  "seconds": 4.281674833997386,
+  "limits": "Tiny synthetic architecture only; not a full checkpoint or challenge-data/CUDA rerun."
+}

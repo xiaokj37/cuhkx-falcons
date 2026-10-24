@@ -1,0 +1,70 @@
+# CUHK-X License
+
+This project contains multiple components with different licensing terms:
+
+## Code License
+
+**MIT License**
+
+Copyright (c) 2025 Siyang Jiang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Dataset License
+
+**Data Use Agreement (DUA) - Non-Commercial Research Only**
+
+The CUHK-X dataset is made available for non-commercial research purposes only under a Data Use Agreement (DUA). The dataset is NOT redistributable.
+
+### Terms and Conditions:
+
+1. **Non-Commercial Use Only**: The dataset may only be used for non-commercial research and educational purposes.
+
+2. **No Redistribution**: Users are not permitted to redistribute, share, or make the dataset publicly available in any form.
+
+3. **Attribution Required**: Any research or publication using this dataset must cite the original paper and acknowledge the dataset creators.
+
+4. **Research Purpose**: The dataset is intended solely for academic research in human activity recognition, understanding, and reasoning.
+
+5. **Access Control**: Users must obtain explicit permission from the dataset creators before accessing the data.
+
+6. **Compliance**: Users must ensure compliance with their institution's ethics guidelines and IRB requirements when using human activity data.
+
+### Contact for Dataset Access:
+- Email: syjiang [AT] ie.cuhk.edu.hk
+- Dataset URL: https://aiot-public-dataset-cuhk-x.cuhkaiot.com/
+
+## Derived Annotations and Splits License
+
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**
+
+Our derived annotations, data splits, and metadata are licensed under CC BY 4.0.
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+For the full CC BY 4.0 license text, visit: https://creativecommons.org/licenses/by/4.0/
+
+---
+
+**Important Note**: Different components of this project are subject to different licenses. Please ensure you comply with the appropriate license terms for each component you use.
