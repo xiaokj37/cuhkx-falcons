@@ -2,7 +2,6 @@
 
 Team Falcons' CUHK-X Challenge Small Model Track solution, developed at Zhejiang University.
 
-[![CPU checks](https://github.com/xiaokj37/cuhkx-falcons/actions/workflows/cpu-checks.yml/badge.svg)](https://github.com/xiaokj37/cuhkx-falcons/actions/workflows/cpu-checks.yml)
 [![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 This repository contains the training and inference code for the selected competition model. It combines a shared video backbone with sensor encoders, missing-modality-aware fusion, and a small residual cross-attention module. A fixed second temporal view improves coverage without adding model weights.

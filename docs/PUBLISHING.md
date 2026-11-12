@@ -4,7 +4,7 @@ Canonical repository: https://github.com/xiaokj37/cuhkx-falcons
 
 Original Team Falcons contributions use Apache-2.0. `THIRD_PARTY_NOTICES.md` identifies upstream components and their retained licenses.
 
-Keep the README, requirements, environment, training guide, source map and notices together. GitHub Actions performs CPU-only source and portability checks; it does not download CUHK-X data or launch training.
+Keep the README, requirements, environment, training guide, source map and notices together. The README lists commands for running the source and portability checks locally.
 
 The trained checkpoint is available on request from [xiaokj@zju.edu.cn](mailto:xiaokj@zju.edu.cn). Its size and SHA-256 are listed in `models/README.md`.
 
