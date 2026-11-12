@@ -108,4 +108,4 @@ CUDA_VISIBLE_DEVICES=0 bash inference.sh /path/to/Testing outputs/retrained.csv 
   --checkpoint models/retrained.pt
 ```
 
-No original submitted answer CSV is needed or shipped. Training code is provided for research reproduction; training data and historical optimizer checkpoints are not part of the public code archive.
+Training code is provided for research reproduction. Follow the official data access instructions and the training sequence above to create a new checkpoint.

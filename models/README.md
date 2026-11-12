@@ -1,12 +1,14 @@
 # Frozen model artifact
 
-The code repository does not contain model binaries. The retained competition artifact is a single `model.pt`, 96,857,179 bytes:
+The trained competition model is a single `model.pt`, 96,857,179 bytes. To request the weights, please contact [xiaokj@zju.edu.cn](mailto:xiaokj@zju.edu.cn).
+
+Verify the received file against this checksum:
 
 ```text
 SHA-256: aafbc72913a5664701dec3815d6126ac1cf0846cb8250114567c9de4547ed55e
 ```
 
-Place a separately supplied copy in this directory. The default inference command verifies that exact identity. No public download URL is asserted by this source-only release preparation; the maintainer can publish the model as a separate release asset under the applicable weight/data terms.
+Save the received file as `models/model.pt`. The default inference command verifies that exact identity.
 
 The artifact includes the six modality encoders, heads, gate, residual cross-attention and YOLO11n. Both reported inference modes use this same file. Public pretraining initializers are not needed at inference and are fetched only for new training.
 

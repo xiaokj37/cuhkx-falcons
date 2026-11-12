@@ -70,7 +70,7 @@ Alternatively, create a Python 3.10.20 environment and install `requirements.txt
 
 Challenge data is **not redistributed**. Obtain access through the [CUHK-X dataset organizers](https://aiot-public-dataset-cuhk-x.cuhkaiot.com/) or the [competition data page](https://www.kaggle.com/competitions/cuhk-x-competition-small-model-track/data), and follow its data-use agreement. Keep raw data, decoded arrays and credentials outside Git.
 
-The model binary is also excluded from the code repository. Place the separately supplied frozen artifact at `models/model.pt` and verify its SHA-256:
+To request the trained model weights, please contact [xiaokj@zju.edu.cn](mailto:xiaokj@zju.edu.cn). Save the checkpoint as `models/model.pt` and verify its SHA-256:
 
 ```text
 aafbc72913a5664701dec3815d6126ac1cf0846cb8250114567c9de4547ed55e  models/model.pt
@@ -89,7 +89,7 @@ Testing/
     small_model_track_test.zip
 ```
 
-An extracted `Testing/data/small_model_track_test/` or `Testing/small_model_track_test/` is also accepted. The manifest needs a `path` column. Its row population and order determine the output; there is no hard-coded 405-row requirement or lookup of original submitted predictions.
+An extracted `Testing/data/small_model_track_test/` or `Testing/small_model_track_test/` is also accepted. The manifest needs a `path` column. Its row population and order determine the output.
 
 ```bash
 # Default: two fixed temporal views; one physical GPU processes four logical shards.
@@ -132,10 +132,14 @@ python scripts/check_release.py
 python -m unittest discover -s tests -v
 ```
 
-The public preparation does not launch new fitting or inference jobs. The current release checks are described in [docs/RELEASE_VALIDATION.md](docs/RELEASE_VALIDATION.md); they do not imply a fresh end-to-end dataset rerun after the original data was removed from the development server.
+See [docs/RELEASE_VALIDATION.md](docs/RELEASE_VALIDATION.md) for the verification results and the scope of the public-source compatibility checks.
 
 ## Licensing and acknowledgements
 
 Original Team Falcons contributions are released under **Apache-2.0**. Third-party code and dependencies retain their own terms: the included VideoMAEv2 and LIMU-BERT-X code is MIT, MotionBERT is Apache-2.0, and the external Ultralytics dependency is AGPL-3.0. The dataset and separately supplied model weights have distinct terms. See [LICENSE](LICENSE), [NOTICE](NOTICE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), and the retained upstream texts.
 
-We thank the CUHK-X dataset creators and challenge organizers, and the authors of VideoMAEv2, LIMU-BERT-X, MotionBERT and the other cited components. Team Falcons: Kaijie Xiao, Zhejiang University; advisors Yi Gao and Wei Dong. Please use `CITATION.cff` to cite this software release and cite the upstream projects separately when applicable.
+We thank the CUHK-X dataset creators and challenge organizers, and the authors of VideoMAEv2, LIMU-BERT-X, MotionBERT and the other cited components.
+
+**Author:** Kaijie Xiao, Zhejiang University. **Supervisors:** Yi Gao and Wei Dong, Zhejiang University.
+
+Please use `CITATION.cff` to cite this software release and cite the upstream projects separately when applicable.

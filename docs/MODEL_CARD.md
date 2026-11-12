@@ -12,6 +12,6 @@
 - **Temporal inference:** 32 cached frames, 16 per view, two fixed interleaved views and equal probability averaging. This is neither a 32-frame Transformer forward nor an ensemble of separately trained checkpoints.
 - **Hardware evidence:** original isolated, network-disabled inference on RTX 4090, PyTorch 2.8.0/CUDA 12.8, Ultralytics 8.3.199. Measured peak reserved GPU memory 1.3301 GiB; 300.04 seconds for the original 405-clip dual-view raw-input verification. Cross-hardware bitwise equality is not established.
 - **Limitations:** local cross-user performance is below 90%; similar co-occurring actions and brief discriminative actions can remain confused. Fixed temporal sampling can miss evidence. Missing modalities, crop failures, different sensors/users/environments and deployment hardware can change results. The masked feature loss encourages sensor relationships but does not provide annotated primary-activity localization.
-- **Release contents:** no dataset images, sensor records, participant identifiers tied to real identities, original prediction CSVs, signatures or credentials are distributed here.
+- **Model access:** request the trained checkpoint from [xiaokj@zju.edu.cn](mailto:xiaokj@zju.edu.cn); its size and SHA-256 are listed in `models/README.md`.
 
 Upstream model weights, vendored implementations, and dataset access each have their own terms. See the license inventory rather than assuming one license covers all components.

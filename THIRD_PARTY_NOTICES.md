@@ -15,6 +15,6 @@ Original Team Falcons contributions are licensed under **Apache-2.0**; see `LICE
 
 The public video adapter is derived from the author's **MIT VideoMAEv2 source** at the pinned revision above. The frozen competition package used an earlier CC-BY-NC VideoMAE adapter. That source has not been relabeled: it is excluded from this public snapshot and replaced with the MIT author implementation, adapted to preserve the selected model's API, state keys, initialization sequence and SDPA operations. Exact public changes are recorded in `docs/SOURCE_MAP.json` and `third_party/NOTICE.md`. Unused historical ImageBind code is also excluded.
 
-Dataset access remains subject to the separate CUHK-X non-commercial research data-use agreement. No clips, decoded caches, challenge label tables, original answer CSVs or private verification documents are included.
+Dataset access remains subject to the separate CUHK-X non-commercial research data-use agreement.
 
 Public initializer URLs and hashes are pinned in `scripts/fetch_pretrained.py`. The selected trained checkpoint is separate from the code release. Its identity is recorded in `models/README.md`; this code license does not assert a blanket license for the combined model artifact.
